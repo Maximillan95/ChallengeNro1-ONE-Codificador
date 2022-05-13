@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>ENCRIPTADOR DE TEXTO</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./imagenes/logo.svg" alt="logo">
+    </header>
+        <main>
+            <section class="sec-izq">
+                <textarea type="text" name="" class="texto-a-encriptar"  placeholder="Ingrese el texto aquí"></textarea>
+                <div class="condicion">
+                    <img src="./imagenes/signo_exclamacion.svg" alt="signo de exclamacion">
+                    <h5 >Solo letras minúsculas y sin acentos</h5>
+                </div>
+                <div class="botones_Enc_Des">
+                    <button class="btn_enc" onclick="btnEncriptar()">ENCRIPTAR</button>
+                    <button class="btn_des" onclick="btnDesencriptar()">DESENCRIPTAR</button>
+                </div>
+            </section>
+            <section class="sec-der">
+                <textarea type="text" name="" class="mensaje-codificado" cols="30" rows="10"></textarea>
+                <button class="btn_copiar" onclick="btnCopiar()">COPIAR</button>
+            </section>
+        </main>
+
+    <footer >
+        <h5 class="autor">Creador de la página: Millán Maximiliano</h5>
+    </footer>
+<script type="text/javascript" src="interaccion.js"></script>
+</body>
+</html>
+
