@@ -5,6 +5,7 @@ const mensaje = document.querySelector(".mensaje-codificado");
 function btnEncriptar(){
     const textoEncriptado = encriptar(textoAEncriptar.value);
     mensaje.value = textoEncriptado;
+    textoAEncriptar.value = "";
 }
 
 function encriptar(stringParaEncriptar){
@@ -23,6 +24,7 @@ function encriptar(stringParaEncriptar){
 function btnDesencriptar(){
     const textoDesencriptado = desencriptar(textoAEncriptar.value)
     mensaje.value = textoDesencriptado;
+    textoAEncriptar.value = "";
 }
 
 function desencriptar(stringParaDesencriptar){
@@ -40,4 +42,5 @@ function desencriptar(stringParaDesencriptar){
 function btnCopiar(){
     mensaje.select();
     document.execCommand('copy');
+    mensaje.value = "";
 }
