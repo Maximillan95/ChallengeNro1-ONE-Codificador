@@ -1,0 +1,118 @@
+html{
+    /*position: relative;*/
+    width: 1000px;
+    height: 600px;
+    background-color: #F3F5FC;
+    font-family: sans-serif;
+}
+
+main{
+    display: flex;
+}
+.logo{
+    margin-left: 0px;
+    margin-top: 45px;
+}
+
+
+/* Ingresa el texto que desees encriptar o desencriptar. */
+.texto-a-encriptar{
+    position: absolute;
+    font-size: 32px;
+    text-align: center;
+    width: 677px;
+    height: 230px;
+    left: 240px;
+    top: 168px;
+    color: #0A3871;
+    border: none; /*QUITAMOS EL BORDE*/
+    background-color: transparent; 
+    resize: none; /*PARA QUITAR AJUSTE DE TAMAÑO*/
+}
+
+/* condicionante */
+.condicion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    font-size: 18px;
+    position: absolute;
+    width: 280px;
+    height: 18px;
+    left: 240px;
+    top: 450px;
+    color: #495057;
+}
+
+/*BOTONES ENCRIPTAR / DESENCRIPTAR*/
+.botones_Enc_Des{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 485px;
+}
+.btn_enc, .btn_des{
+    width: 330px;
+    margin: 10px;
+    height: 67px;
+    border-radius: 24px;
+}
+.btn_enc{
+    background: #0A3871;
+    color: white;
+    border-color: #D8DFE8;
+    
+}
+.btn_des{
+    background: #D8DFE8;
+    color: #0A3871;
+    border-color: #0A3871;
+}
+
+/*SECCION DERECHA*/
+.sec-der{
+    position: absolute;
+    width: 300px;
+    height: 544px;
+    left: 1000px;
+    top: 40px;
+    border-radius: 24px;
+    background: #FFFFFF;
+}
+.btn_copiar{
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    left: 75px;
+    top: 460px;
+    border-radius: 24px;
+    border-color: #0A3871;
+    color: #0A3871;
+}
+.mensaje-codificado{
+    font-size: 24px;
+    color: #0A3871;
+    top: 52px;
+    width: 260px;
+    height: 404px;
+    margin: 20px;
+    border: none;
+    background-color: transparent; 
+    resize: none;
+}
+
+/*PIE DE PAGINA*/
+
+.autor{
+    position: absolute;
+    width: 260px;
+    top: 580px;
+    left: 470px;
+}
